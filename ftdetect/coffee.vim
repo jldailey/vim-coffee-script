@@ -7,7 +7,8 @@ autocmd BufNewFile,BufRead *.kup set filetype=coffee
 autocmd BufNewFile,BufRead *.cup set filetype=coffee
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd BufNewFile,BufRead *Cakefile set filetype=coffee
-autocmd BufNewFile,BufRead *.coffeekup set filetype=coffee
+autocmd BufNewFile,BufRead *.coffeekup,*.ck set filetype=coffee
+autocmd BufNewFile,BufRead *._coffee set filetype=coffee
 
 function! s:DetectCoffee()
     if getline(1) =~ '^#!.*\<coffee\>'
