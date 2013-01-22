@@ -3,6 +3,8 @@
 " URL:         http://github.com/kchmck/vim-coffee-script
 " License:     WTFPL
 
+autocmd BufNewFile,BufRead *.kup set filetype=coffee
+autocmd BufNewFile,BufRead *.cup set filetype=coffee
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd BufNewFile,BufRead *Cakefile set filetype=coffee
 autocmd BufNewFile,BufRead *.coffeekup set filetype=coffee
